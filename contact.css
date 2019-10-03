@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    
+}
+
+.ct-title {
+    margin: 1em 0;
+}
+
+.the-map {
+    margin-top: 100px
+}
+
+#mapid { 
+    height: 200px;
+    border: 1px solid red;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form > label {
+    margin: 1em 0 0 0;
+}
+
+.ct-btn {
+    margin: 1em;
+}
+
+.ct-btn button {
+    border-color: blueviolet;
+    background: whitesmoke;
+    color: black;
+}
+
+.container {
+    border: 1px solid pink;
+}
+
+.ct-subtitle {
+    margin: 40px 0;
+}
+
+.ct-who {
+    margin-top: 60px;
+}
+
+.people {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.people figcaption {
+    text-align: center;
+    background: rgba(0,50,150,0.3);
+}
