@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    
+    .gototop {
+        position: fixed;
+        bottom: 5%;
+        right: 5%;
+        background-color: rgba(50, 50, 50, 0.35);
+        padding: 10px 15px;
+        font-weight: bold;
+    }
+
+    .gototop a {
+        color: white;
+        text-decoration: none;
+    }
+
+
+    @media screen and (max-width: 576px) { /* hide on small screen */
+        .gototop {
+            display: none;
+        }
+    }
+    
+    
+    
+    </style>
+</head>
+<body>
+
+    <!-- This is the important part -->
+
+    <p class="gototop"><a href="#">^</a></p>
+
+
+
+
+    
+</body>
+</html>
