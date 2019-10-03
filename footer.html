@@ -2,22 +2,99 @@
 <html lang="en">
   <head>
     <title>Title</title>
-    <!-- Required meta tags -->
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+
+    <!-- I am using internal CSS because footer will be a shared content -->
+  
+    <style>
+
+      
+    footer {
+      padding: 40px 0 10px 0;
+      background: #784F41;
+      color: #BBE5ED;
+    }
+    
+
+    .media-footer {
+      padding:0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+    }
+
+    .media-footer a {
+      text-decoration: none;
+      padding: 0 2em;
+      color: #BBE5ED;
+    }
+
+    .media-footer a:hover {
+      color: rgb(130, 192, 204);
+    }
+      
+      
+    .footer-text {
+      text-align: center;
+      margin: 30px 0;
+      font-size: 10px;
+    } 
+
+    .footer-text .wild-link {
+      color:  rgb(130, 192, 204);
+      text-decoration: none;
+    }
+
+
+    .footer-text .wild-link:hover{
+      color: #F99797;
+    }
+    
+    
+    </style>
+  
+  
+  
   </head>
   <body>
     
+
+
+
+
+
+
+
+
     <!-- Footer -->
     <footer>
-        <a href="www.page3.com"> About the Project </a>
-        <p> Project did by students of <a href="https://www.wildcodeschool.com/en-GB/campuses/lisbon">Wild Code School</a> 2019 </p>
+      
+        <ul class="media-footer">
+          <li><a href="https://www.facebook.com">Facebook</a></li>
+          <li><a href="https://www.instagram.com">Instagram</a></li>
+          <li><a href="https://twitter.com">Twitter</a></li>
+          <li><a href="https://www.youtube.com">Youtube</a></li>
+        </ul>
+      
+      <div class="footer-text">
+        <p>A project by <a href="./contact.html" class="wild-link">wilders</a> for the wild minded - <a href="https://www.wildcodeschool.com/en-GB/campuses/lisbon" class="wild-link">Wild Code School</a> 2019 </p>
+      </div>
     </footer>
     
-    <!-- Optional JavaScript -->
+
+
+
+
+
+
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
