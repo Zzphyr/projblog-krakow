@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <!-- CSS -->
         <link rel="stylesheet" href="./contact.css">
-        
+        <link rel="stylesheet" href="./common-style.css">
         <!-- For Leaflet map-->
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
@@ -21,6 +21,26 @@
     
     </head>
     <body>
+        <header>
+                <nav class="navbar navbar-expand-sm nav-center">
+                    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse menu" id="main-navigation">
+                      <ul class="navbar-nav nav">
+                        <li class="nav-item">
+                          <a class="nav-link" href="./trips.html">Trips</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link nav-btn-home" href="./home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                      </ul>
+                    </div>
+                </nav>
+            </header>  
     <main>   
         <h1 class="ct-title">Contact</h1>
         <div class="container-fluid row">
@@ -75,8 +95,22 @@
                 </figure> 
             </div>                          
         </section>
-    </main> 
-        
+    </main>
+        <!-- go to top button -->
+    <p class="gototop"><a href="#">^</a></p>
+
+    <footer>
+      <ul class="media-footer">
+        <li><a href="https://www.facebook.com">Facebook</a></li>
+        <li><a href="https://www.instagram.com">Instagram</a></li>
+        <li><a href="https://twitter.com">Twitter</a></li>
+        <li><a href="https://www.youtube.com">Youtube</a></li>
+      </ul>
+      <div class="footer-text">
+        <p>A project by <a href="./contact.html" class="wild-link">wilders</a> for the wild minded - <a href="https://www.wildcodeschool.com/en-GB/campuses/lisbon" class="wild-link">Wild Code School</a> 2019 </p>
+      </div>
+    </footer>
+       
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
