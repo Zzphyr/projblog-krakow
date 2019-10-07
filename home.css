@@ -1,0 +1,48 @@
+header {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    background-image: url(https://img.washingtonpost.com/wp-apps/imrs.php?src=https://img.washingtonpost.com/rf/image_960w/2010-2019/WashingtonPost/2016/05/05/Interactivity/Images/iStock_000001440835_Large1462483441.jpg&w=1484);
+    background-position: center;
+    background-size: cover;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+.grid-container {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat (3, 1fr);
+    grid-template-rows: repeat (3, 1fr);
+    max-width: 900px;
+    margin: auto;
+}
+
+.grid-container-main-img {
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+    background-position: center;
+    background-size: cover;
+}
+
+.grid-container-bottom-img {
+    background-position: center;
+    background-size: cover;
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        display: block;
+        height: auto;
+    }
+
+    .grid-container-main-img, .grid-container-bottom-img {
+        height: 50vh;
+    }
+
+}
