@@ -46,13 +46,6 @@ nav {
 }
 
 
-@media screen and (max-width: 576px) { /* hide on small screen */
-    .gototop {
-        display: none;
-    }
-}
-
-
 /* footer */
 
 footer {
@@ -92,7 +85,19 @@ footer {
     text-decoration: none;
   }
 
-
   .footer-text .wild-link:hover{
     color: #F99797;
   }
+
+
+  /* media queries */
+
+  @media screen and (max-width: 576px) { /* hide on small screen */
+    .gototop {
+      display: none;
+    }
+
+    .media-footer {
+      flex-flow: column wrap;
+    }
+}
