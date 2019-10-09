@@ -6,19 +6,18 @@ body {
 main {
     max-width: 1200px;
     margin: auto;
+    padding: 0 30px 0 30px;
+}
+
+.row {
+    margin: 0;
 }
 
 .ct-title {
-    margin: 1em 0;
-}
-
-.the-map {
-    margin-top: 100px
-}
-
-#mapid { 
-    height: 200px;
-    border: 1px solid red;
+    margin: 0 0 2em 0;
+    text-align: center;
+    border: 2px solid #B399A2;
+    padding: 10px 20px;
 }
 
 form {
@@ -35,9 +34,17 @@ form > label {
 }
 
 .ct-btn button {
-    border-color: blueviolet;
+    border-color: rgb(49, 49, 49);
     background: whitesmoke;
     color: black;
+    transition: 120ms ease-out;
+    border: 1px solid #784F41;
+}
+
+.ct-btn button:hover {
+    background: #BBE5ED;
+    color: black;
+    border: 1px solid #784F41;
 }
 
 .container {
@@ -50,16 +57,41 @@ form > label {
 
 .ct-who {
     margin-top: 60px;
+    padding-left: 15px;
 }
 
 .people {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 5px;
+    margin: 10px;
 }
 
 .people figcaption {
     text-align: center;
     background: rgba(0,50,150,0.3);
+}
+
+/* css for the map */
+
+.the-map {
+    margin-top: 100px;
+}
+
+#mapid { 
+    height: 30vh;
+    border: 2px solid rgb(49, 49, 49);
+    z-index: 0;
+}
+
+
+@media screen and (max-width: 785px) {
+    .people {
+        flex-direction: column; 
+        align-items: center;
+    } 
+
+    .ct-title {
+        margin-bottom: 1em;
+    }
 }
