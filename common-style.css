@@ -15,12 +15,6 @@ nav {
   box-shadow: 3px 0 15px 7px rgb(94, 94, 94);
 }
 
-/* 
-main {
-  to avoid overlap
-  margin-top: 130px;
-} */
-
 .nav-item {
   padding: 0 2em;
   list-style: none;
@@ -31,7 +25,7 @@ main {
 .nav-link:visited {
   text-decoration: none;
   color: #BBE5ED;
-
+  padding: 1em 0;
 }
 
 .nav-link:hover {
@@ -40,14 +34,14 @@ main {
 
 .nav-btn-home {
   font-weight: 800;
-  /* background-image: url(https://i.imgur.com/8Gsq2c3.png); 
-  background-size: cover; */
 }
 
 .menu {
   justify-content: center;
   align-items: center;
 }
+
+
 
 
 /* to top button */
@@ -127,5 +121,16 @@ footer {
 @media screen and (max-width: 442px) {
   footer {
     margin-top: 50px;
+  }
+
+  .nav-btn-home {
+  padding: 0 0 1em 0;
+  }
+  
+  .nav-item {
+    padding: 0 2em;
+    list-style: none;
+    text-align: center;
+    font-size: 1.7em;
   }
 }

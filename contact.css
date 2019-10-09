@@ -4,20 +4,27 @@ body {
 }
 
 main {
-    max-width: 1200px;
-    margin: 130px auto;
-    padding: 0 30px 0 30px;
+    max-width: 900px;
+    margin: auto;
+    padding: 130px 30px 0 30px;
 }
 
 .row {
     margin: 0;
+    padding: 0;
+}
+
+.col-12, .col-md-6 {
+    padding: 0;
 }
 
 .ct-title {
-    margin: 0 0 2em 0;
+    margin: 0 0 70px 0;
     text-align: center;
-    border: 2px solid #B399A2;
     padding: 10px 20px;
+    background: #784F41;
+    color: white;
+    font-size: 46px;
 }
 
 form {
@@ -52,12 +59,7 @@ form > label {
 }
 
 .ct-subtitle {
-    margin: 40px 0;
-}
-
-.ct-who {
-    margin-top: 60px;
-    padding-left: 15px;
+    padding: 35px 0 25px 0;
 }
 
 .people {
@@ -80,7 +82,7 @@ form > label {
 
 #mapid { 
     height: 30vh;
-    border: 2px solid rgb(49, 49, 49);
+    border: 1px solid #784F41;
     z-index: 0;
 }
 
@@ -101,5 +103,11 @@ form > label {
 
     .ct-who {
         padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 442px) {
+    main {
+        padding: 130px 0 0 0;
     }
 }
