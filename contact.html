@@ -1,119 +1,130 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>Contacts</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <!-- CSS -->
-        <link rel="stylesheet" href="./contact.css">
-        <link rel="stylesheet" href="./common-style.css">
-        <!-- For Leaflet map-->
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
-   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-   crossorigin=""/>
-        <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
- integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
- crossorigin="">
-        </script>
-    
-    </head>
-    <body>
-        <header>
-                <nav class="navbar navbar-expand-sm nav-center">
-                    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse menu" id="main-navigation">
-                      <ul class="navbar-nav nav">
-                        <li class="nav-item">
-                          <a class="nav-link" href="./trips.html">Trips</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link nav-btn-home" href="./home.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="./contact.html">Contact</a>
-                        </li>
-                      </ul>
-                    </div>
-                </nav>
-            </header>  
-    <main>   
-        <h1 class="ct-title">Contact</h1>
-        <div class="container-fluid row">
-            <div class="col-12 col-md-6">
-                <h2 class="ct-subtitle">Speak to us!</h2>
-            <!-- see https://help.formspree.io/hc/en-us-->    
-            <form action="https://formspree.io/xlyqkdnm" method="POST" id="contact-form">
-                <label for="name">Your name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Your email:</label>
-                <input type="mail" id="email" name="email" required>
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject">
-                <label for="message">Your message:</label>
-                <textarea name="message" id="message" cols="50" rows="10"></textarea>
-                <div class="text-center ct-btn">
-                    <button type="submit" value="Send" class="btn btn-primary">Send !</button>
-                </div>
-            </form>
+<head>
+  <title>Contacts</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-            </div>
-            <div class="col-12 offset-md-1 col-md-5">
-                <h2 class="ct-subtitle">Meeting place</h2>
-                <address>
-                    Rua do Conde de Redondo 145<br>
-                    1150-298 Lisboa<br>
-                    Portugal
-                </address>
-                <div class="the-map" >
-                        <!-- TODO: add to CSS, #mapid { height: 180px; }  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./contact.css">
+  <link rel="stylesheet" href="./common-style.css">
+  <!-- For Leaflet map-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+    integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+    crossorigin="">
+  </script>
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-sm nav-center">
+      <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse menu" id="main-navigation">
+        <ul class="navbar-nav nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./trips.html">Trips</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-btn-home" href="./home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h1 class="ct-title">Contact</h1>
+    <div class="container-fluid row">
+      <div class="col-12 col-md-6">
+        <h2 class="ct-subtitle">Speak to us!</h2>
+        <!-- see https://help.formspree.io/hc/en-us-->
+        <form action="https://formspree.io/xlyqkdnm" method="POST" id="contact-form">
+          <label for="name">Your name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Your email:</label>
+          <input type="mail" id="email" name="email" required>
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject">
+          <label for="message">Your message:</label>
+          <textarea name="message" id="message" cols="50" rows="10"></textarea>
+          <div class="text-center ct-btn">
+            <button type="submit" value="Send" class="btn btn-primary">Send !</button>
+          </div>
+        </form>
+
+      </div>
+      <div class="col-12 offset-md-1 col-md-5">
+        <h2 class="ct-subtitle">Meeting place</h2>
+        <address>
+          Rua do Conde de Redondo 145<br>
+          1150-298 Lisboa<br>
+          Portugal
+        </address>
+        <div class="the-map">
+          <!-- TODO: add to CSS, #mapid { height: 180px; }  
                             instructions in: https://leafletjs.com/examples/quick-start/
                         -->
-                    <div id="mapid">Let here be MAP!</div> 
-                    </div>
-            </div>
+          <div id="mapid">Let here be MAP!</div>
         </div>
-        
-        <section class="ct-who">
-            <h2 class="ct-subtitle">Who are we?</h2>
-            <div class="people">
-                <figure>
-                    <img src="https://picsum.photos/200" alt="Afonso Monteiro">
-                    <figcaption>Afonso Monteiro</figcaption>
-                </figure>
-                <figure>
-                    <img src="https://picsum.photos/200" alt="David Saiote">
-                    <figcaption>David Saiote</figcaption>
-                    </figure>
-                <figure>
-                    <img src="https://picsum.photos/200" alt="Manuela Cardoso">
-                    <figcaption>Manuela Cardoso</figcaption>
-                </figure> 
-            </div>                          
-        </section>
-    </main>
-        <!-- go to top button -->
-    <p class="gototop"><a href="#">^</a></p>
-
-    <footer>
-      <ul class="media-footer">
-        <li><a href="https://www.facebook.com">Facebook</a></li>
-        <li><a href="https://www.instagram.com">Instagram</a></li>
-        <li><a href="https://twitter.com">Twitter</a></li>
-        <li><a href="https://www.youtube.com">Youtube</a></li>
-      </ul>
-      <div class="footer-text">
-        <p>A project by <a href="./contact.html" class="wild-link">wilders</a> for the wild minded - <a href="https://www.wildcodeschool.com/en-GB/campuses/lisbon" class="wild-link">Wild Code School</a> 2019 </p>
       </div>
-    </footer>
-       
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    </div>
+
+    <section class="ct-who">
+      <h2 class="ct-subtitle">Who are we?</h2>
+      <div class="people">
+        <figure>
+          <img src="https://picsum.photos/200" alt="Afonso Monteiro">
+          <figcaption>Afonso Monteiro</figcaption>
+        </figure>
+        <figure>
+          <img src="https://picsum.photos/200" alt="David Saiote">
+          <figcaption>David Saiote</figcaption>
+        </figure>
+        <figure>
+          <img src="https://picsum.photos/200" alt="Manuela Cardoso">
+          <figcaption>Manuela Cardoso</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+  <!-- go to top button -->
+  <p class="gototop"><a href="#">^</a></p>
+
+  <footer>
+    <ul class="media-footer">
+      <li><a href="https://www.facebook.com">Facebook</a></li>
+      <li><a href="https://www.instagram.com">Instagram</a></li>
+      <li><a href="https://twitter.com">Twitter</a></li>
+      <li><a href="https://www.youtube.com">Youtube</a></li>
+    </ul>
+    <div class="footer-text">
+      <p>A project by <a href="./contact.html" class="wild-link">wilders</a> for the wild minded - <a
+          href="https://www.wildcodeschool.com/en-GB/campuses/lisbon" class="wild-link">Wild Code School</a> 2019 </p>
+    </div>
+  </footer>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>
