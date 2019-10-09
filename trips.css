@@ -1,3 +1,20 @@
+main {
+    max-width: 1200px;
+    margin: 130px auto;
+    padding: 0 30px 0 30px;
+}
+
+.tp-title {
+    margin: 0 0 2em 0;
+    text-align: center;
+    border: 2px solid #B399A2;
+    padding: 10px 20px;
+}
+
+.tp-trips-intro {
+    text-align: center;
+}
+
 .tp-list-days {
     max-width: 950px;
     display: flex;
