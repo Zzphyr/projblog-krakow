@@ -1,18 +1,29 @@
 main {
-    max-width: 1200px;
-    margin: 130px auto;
-    padding: 0 30px 0 30px;
+    max-width: 900px;
+    margin: auto;
+    padding: 130px 30px 0 30px;
 }
 
 .tp-title {
-    margin: 0 0 2em 0;
+    margin: 0 0 70px 0;
+    text-align: center;
+    background: #784F41;
+    color: white;
+    padding: 10px 20px;
+    font-size: 46px;
+}
+
+.tp-subtitle {
+    margin: 50px 0 30px 0;
+    color: #784F41;
     text-align: center;
     border: 2px solid #B399A2;
-    padding: 10px 20px;
+    padding: 0.3em 0;
 }
 
 .tp-trips-intro {
-    text-align: center;
+    font-size: 22px;
+    padding: 35px 0 25px 0;
 }
 
 .tp-list-days {
@@ -23,8 +34,7 @@ main {
 }
 
 .tp-list-days p {
-    max-width: 720px;
-    margin: auto;
+    font-size: 18px;
 }
 
 figure {
@@ -38,17 +48,11 @@ img {
     max-height: 100%;
     height: auto;
     max-width: 100%;
-    margin: 5px;
 }
 
-.tp-subtitle {
-    margin: 50px 0 30px 0;
-    color: rgb(57, 57, 190);
-    text-align: center;
-}
 
 .local-name {
     text-align: center;
     margin: 2em 0 1em 0;
-    font-size: 26px;
+    font-size: 25px;
 }
