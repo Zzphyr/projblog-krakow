@@ -5,7 +5,7 @@ body {
 
 main {
     max-width: 1200px;
-    margin: auto;
+    margin: 130px auto;
     padding: 0 30px 0 30px;
 }
 
@@ -93,5 +93,13 @@ form > label {
 
     .ct-title {
         margin-bottom: 1em;
+    }
+
+    .ct-subtitle {
+        text-align: center;
+    }
+
+    .ct-who {
+        padding-left: 0;
     }
 }
