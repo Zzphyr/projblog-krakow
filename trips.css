@@ -28,12 +28,9 @@ main {
 }
 
 figure {
-    
-    
     display: flex;
     flex-flow: column;
     margin: 20px auto;
-
 }
 
 img {
@@ -41,7 +38,6 @@ img {
     max-height: 100%;
     height: auto;
     max-width: 100%;
-
 }
 
 .tp-subtitle {

@@ -15,10 +15,11 @@ nav {
   box-shadow: 3px 0 15px 7px rgb(94, 94, 94);
 }
 
+/* 
 main {
-  /* to avoid overlap */
+  to avoid overlap
   margin-top: 130px;
-}
+} */
 
 .nav-item {
   padding: 0 2em;
@@ -120,5 +121,11 @@ footer {
 @media screen and (max-width: 576px) {
   .media-footer {
     flex-flow: column wrap;
+  }
+}
+
+@media screen and (max-width: 442px) {
+  footer {
+    margin-top: 50px;
   }
 }
