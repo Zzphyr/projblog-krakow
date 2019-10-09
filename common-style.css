@@ -51,15 +51,22 @@ main {
 
 /* to top button */
 
-.gototop a {
+#gototop {
   position: fixed;
   bottom: 3%;
   right: 2%;
-  background-color: rgba(50, 50, 50, 0.3);
-  padding: 10px 15px;
+  background-color: rgba(50, 50, 50, 0.25);
+  padding: 6px 12px;
   font-weight: bold;
   color: white;
   text-decoration: none;
+  border-radius: 6px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+#gototop:hover {
+  background-color: rgba(50, 50, 50, 0.35);
 }
 
 
@@ -110,12 +117,6 @@ footer {
 /* media queries */
 
 @media screen and (max-width: 576px) {
-
-  /* hide on small screen */
-  .gototop {
-    display: none;
-  }
-
   .media-footer {
     flex-flow: column wrap;
   }
