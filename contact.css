@@ -14,7 +14,8 @@ main {
     padding: 0;
 }
 
-.col-12, .col-md-6 {
+.col-12,
+.col-md-6 {
     padding: 0;
 }
 
@@ -23,16 +24,16 @@ main {
     text-align: center;
     padding: 10px 20px;
     background: #784F41;
-    color: white;
+    color: var(--title--color);
     font-size: 44px;
 }
 
 form {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
-form > label {
+form>label {
     margin: 1em 0 0 0;
 }
 
@@ -69,10 +70,28 @@ form > label {
     margin: 15px;
 }
 
+.people img {
+    border-radius: 6px;
+}
+
 .people figcaption {
     text-align: center;
-    background: rgba(0,50,150,0.3);
 }
+
+.media-logo {
+    height: 40px;
+    width: auto;
+    margin: 0 20px 65px 20px;
+}
+
+.media-logo:hover {
+    opacity: 0.6;
+}
+
+.person-detail {
+    text-align: center;
+}
+
 
 /* css for the map */
 
@@ -80,7 +99,7 @@ form > label {
     margin-top: 100px;
 }
 
-#mapid { 
+#mapid {
     height: 30vh;
     border: 1px solid #784F41;
     z-index: 0;
@@ -89,9 +108,9 @@ form > label {
 
 @media screen and (max-width: 785px) {
     .people {
-        flex-direction: column; 
+        flex-direction: column;
         align-items: center;
-    } 
+    }
 
     .ct-title {
         margin-bottom: 1em;
@@ -103,6 +122,10 @@ form > label {
 
     .ct-who {
         padding-left: 0;
+    }
+
+    address {
+        text-align: center;
     }
 }
 

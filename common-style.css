@@ -1,5 +1,17 @@
 /* Styles for the common site elements */
 
+/* styling global variables */
+
+* {
+  --title--color: white;
+  /* example use: background-color: var(--title--color);*/
+
+
+
+
+}
+
+
 /*  navbar */
 
 nav {
@@ -121,9 +133,9 @@ footer {
   }
 
   .nav-btn-home {
-  padding: 0 0 1em 0;
+    padding: 0 0 1em 0;
   }
-  
+
   .nav-item {
     padding: 0 2em;
     list-style: none;
