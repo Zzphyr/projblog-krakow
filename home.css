@@ -8,14 +8,16 @@ header {
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-image: url(https://img.washingtonpost.com/wp-apps/imrs.php?src=https://img.washingtonpost.com/rf/image_960w/2010-2019/WashingtonPost/2016/05/05/Interactivity/Images/iStock_000001440835_Large1462483441.jpg&w=1484);
     background-position: center;
     background-size: cover;
+    background-blend-mode: lighten;
+    background-image: url("photos/SM_3.jpg"), linear-gradient(35deg, rgba(2,0,36,0.8589810924369747) 100%, rgba(120,120,120,0.33237044817927175) 100%);
 }
 
 h1 {
     font-size: 70px;
-    padding: 10px 30px;
+    padding: 70px 30px;
+    color: whitesmoke;
 }
 
 h2 {
@@ -27,7 +29,7 @@ h2 {
 .grid-container {
     height: 100vh;
     display: grid;
-    grid-template-columns: repeat (3, 1fr);
+    grid-template-columns: repeat (3, 3fr);
     grid-template-rows: 3fr 3fr 4fr;
     margin: auto;
     max-width: 900px;
@@ -42,6 +44,8 @@ h2 {
     justify-content: center;
     align-items: flex-end;
     padding: 30px;
+    background-blend-mode: lighten;
+    background-image: linear-gradient(35deg, rgba(2,0,36,0.8589810924369747) 100%, rgba(120,120,120,0.33237044817927175) 100%);
 }
 
 .grid-container-bottom-img {
@@ -49,6 +53,7 @@ h2 {
     justify-content: center;
     align-items: flex-end;
     padding: 10px;
+    background-blend-mode: lighten;
 }
 
 .home-p {
@@ -70,6 +75,9 @@ h2 {
 
 .span-cool {
     opacity:0;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 25px;
 }
 
 .grid-container-main-img:hover .span-cool {

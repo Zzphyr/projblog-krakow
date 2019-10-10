@@ -15,6 +15,10 @@ nav {
   box-shadow: 3px 0 15px 7px rgb(94, 94, 94);
 }
 
+.navbar-home {
+  box-shadow: unset;
+}
+
 .nav-item {
   padding: 0 2em;
   list-style: none;
