@@ -1,6 +1,4 @@
-main {
-    margin-top: 45px;
-}
+
 
 header {
     display: flex;
@@ -11,13 +9,16 @@ header {
     background-position: center;
     background-size: cover;
     background-blend-mode: lighten;
-    background-image: url("photos/SM_3.jpg"), linear-gradient(35deg, rgba(2,0,36,0.8589810924369747) 100%, rgba(120,120,120,0.33237044817927175) 100%);
+    background-image: url("photos/SM_3.jpg"), linear-gradient(to bottom, rgba(39, 39, 39, 0.863), rgba(60, 98, 201, 0.322));
 }
 
 h1 {
-    font-size: 70px;
-    padding: 70px 30px;
-    color: whitesmoke;
+    font-size: 120px;
+    text-align: center;
+    color: var(--title--color);
+    line-height: 0.8em;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.404);
+    font-family: var(--title-font);
 }
 
 h2 {
@@ -25,6 +26,17 @@ h2 {
     padding: 80px 0px 15px 0px;
 }
 
+.day-1 {
+    margin-top: 3em;
+    padding: 1em;
+    font-family: var(--title-font);
+    font-weight: 600;
+    color: var(--general--color);
+}
+
+.banner-text2 {
+    font-size: 42px;
+}
 
 .grid-container {
     height: 100vh;
@@ -45,7 +57,7 @@ h2 {
     align-items: flex-end;
     padding: 30px;
     background-blend-mode: lighten;
-    background-image: linear-gradient(35deg, rgba(2,0,36,0.8589810924369747) 100%, rgba(120,120,120,0.33237044817927175) 100%);
+    background-image: linear-gradient(to bottom, rgba(2,0,36,0.85), rgba(120,120,120,0.33));
 }
 
 .grid-container-bottom-img {
@@ -71,12 +83,20 @@ h2 {
 .link-image:hover {
     text-decoration: none;
     color: black;
+    filter: brightness(87%)
 }
 
 .span-cool {
     opacity:0;
-    color: whitesmoke;
+    color: var(--title--color);
     text-align: center;
+    font-size: 19px;
+    font-weight: 500;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.514);
+    font-family: var(--text-font);
+}
+
+.span-cool-main {
     font-size: 25px;
 }
 
@@ -93,7 +113,7 @@ h2 {
     background-size: cover;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 770px) {
     .grid-container {
         display: block;
         height: auto;
@@ -104,5 +124,20 @@ h2 {
     .grid-container-main-img,
     .grid-container-bottom-img {
         height: 50vh;
+    }   
+    .span-cool-main {
+        font-size: 19px;
+        font-weight: 500;
     }
 }
+
+@media screen and (max-width: 900px) {
+    h1 {
+        font-size: 55px;
+        line-height: unset;
+    }
+    .banner-text2 {
+        font-size: 25px;
+    }
+}
+

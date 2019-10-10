@@ -7,18 +7,22 @@ main {
 .tp-title {
     margin: 0 0 70px 0;
     text-align: center;
-    background: #784F41;
+    background: var(--general--color);
     color: white;
-    padding: 10px 20px;
+    padding: 15px 20px;
     font-size: 44px;
+    font-family: var(--title-font);
 }
 
 .tp-subtitle {
     margin: 50px 0 30px 0;
-    color: #784F41;
+    color: var(--general--color);
     text-align: center;
-    border: 2px solid #B399A2;
+    border-top: 4px double var(--general--color);
+    border-bottom: 4px double var(--general--color);
     padding: 0.3em 0;
+    padding: 0.5em;
+    font-family: var(--title-font);
 }
 
 .tp-trips-intro {
@@ -55,4 +59,9 @@ img {
     text-align: center;
     margin: 2em 0 1em 0;
     font-size: 25px;
+    font-family: var(--text-font);
+}
+
+p {
+    font-family: var(--text-font);
 }

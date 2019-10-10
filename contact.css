@@ -7,6 +7,7 @@ main {
     max-width: 900px;
     margin: auto;
     padding: 130px 30px 0 30px;
+    font-family: var(--text-font);
 }
 
 .row {
@@ -22,10 +23,11 @@ main {
 .ct-title {
     margin: 0 0 70px 0;
     text-align: center;
-    padding: 10px 20px;
-    background: #784F41;
+    padding: 15px 20px;
+    background: var(--general--color);
     color: var(--title--color);
     font-size: 44px;
+    font-family: var(--title-font);
 }
 
 form {
@@ -42,25 +44,21 @@ form>label {
 }
 
 .ct-btn button {
-    border-color: rgb(49, 49, 49);
     background: whitesmoke;
-    color: black;
-    transition: 120ms ease-out;
-    border: 1px solid #784F41;
+    color: var(--general--color);
+    transition: 130ms ease-out;
+    border: 1px solid var(--general--color);
 }
 
 .ct-btn button:hover {
-    background: #BBE5ED;
+    background: var(--link-blue);
     color: black;
-    border: 1px solid #784F41;
-}
-
-.container {
-    border: 1px solid pink;
+    border: 1px solid var(--general--color);
 }
 
 .ct-subtitle {
     padding: 35px 0 25px 0;
+    font-family: var(--title-font);
 }
 
 .people {
