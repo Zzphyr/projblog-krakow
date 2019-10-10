@@ -27,10 +27,11 @@ h2 {
 }
 
 
+
 .grid-container {
     height: 100vh;
     display: grid;
-    grid-template-columns: repeat (3, 3fr);
+    grid-template-columns: repeat( auto-fit, minmax(33.33%, 1fr) );
     grid-template-rows: 3fr 3fr 4fr;
     margin: auto;
     max-width: 910px;
