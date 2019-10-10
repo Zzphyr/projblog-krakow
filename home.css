@@ -32,7 +32,7 @@ h2 {
     grid-template-columns: repeat (3, 3fr);
     grid-template-rows: 3fr 3fr 4fr;
     margin: auto;
-    max-width: 900px;
+    max-width: 910px;
 }
 
 .grid-container-main-img {
@@ -44,6 +44,7 @@ h2 {
     justify-content: center;
     align-items: flex-end;
     padding: 30px;
+    margin: 5px;
     background-blend-mode: lighten;
     background-image: linear-gradient(35deg, rgba(2,0,36,0.8589810924369747) 100%, rgba(120,120,120,0.33237044817927175) 100%);
 }
@@ -53,6 +54,7 @@ h2 {
     justify-content: center;
     align-items: flex-end;
     padding: 10px;
+    margin: 5px;
     background-blend-mode: lighten;
 }
 
