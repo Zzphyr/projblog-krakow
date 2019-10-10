@@ -43,6 +43,11 @@ figure {
     margin: 30px auto;
 }
 
+figure figcaption {
+    text-align: center;
+    border: 10px solid transparent;
+}
+
 img {
     width: 100%;
     max-height: 90%;
