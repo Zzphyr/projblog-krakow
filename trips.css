@@ -2,6 +2,7 @@ main {
     max-width: 900px;
     margin: auto;
     padding: 130px 30px 0 30px;
+    font-family: var(--text-font);
 }
 
 .tp-title {
@@ -63,11 +64,12 @@ figcaption {
     text-align: center;
     margin: 2em 0 1em 0;
     font-size: 25px;
-    font-family: var(--text-font);
 }
 
-p {
-    font-family: var(--text-font);
+@media screen and (min-width: 443px) {
+    .mobileToDays {
+        display: none;
+    }
 }
 
 
@@ -76,5 +78,28 @@ p {
         width: 100vw;
         transform: translate(-30px, 0px);
         padding: 15px 20px;
+    }
+
+    .mobileToDays {
+        display: flex;
+        justify-content: space-around;
+        padding: 40px 5px 0 5px;
+    }
+
+    .mobile-toDay {
+        padding: 8px 17px;
+        background: var(--general--color);
+        text-align: center;
+        border-radius: 6px;
+        font-family: var(--title-font);
+        font-size: 15px;
+        color: var(--title--color);
+    }
+
+    .mobile-toDay:hover,
+    .mobile-toDay:focus {
+        background: rgb(85, 85, 85);
+        text-decoration: none;
+        color: var(--title--color);
     }
 }

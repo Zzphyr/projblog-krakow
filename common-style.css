@@ -3,6 +3,7 @@
 /* import fonts */
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
 
 /* styling global variables */
 
@@ -56,6 +57,34 @@ nav {
   justify-content: center;
   align-items: center;
 }
+
+/* for the logo */
+
+.logo1,
+.logo2 {
+  font-family: 'Courgette', cursive;
+  position: fixed;
+  top: 15px;
+  left: 28px;
+  text-decoration: none;
+  color: rgba(187, 229, 237, 0.6);
+  z-index: 100;
+  font-size: 20px;
+}
+
+.logo2 {
+  font-family: 'Courgette', cursive;
+  top: 42px;
+  left: 69px;
+  line-height: 0.5em;
+}
+
+.logo1:hover,
+.logo2:hover {
+  text-decoration: none;
+  color: rgba(187, 229, 237, 0.6);
+}
+
 
 /* to top button */
 
@@ -132,9 +161,16 @@ footer {
   .media-footer {
     flex-flow: column wrap;
   }
+
   .footer-text {
     padding: 0 2vw;
   }
+
+  .logo1,
+  .logo2 {
+    display: none;
+  }
+
 }
 
 @media screen and (max-width: 442px) {
