@@ -132,6 +132,9 @@ footer {
   .media-footer {
     flex-flow: column wrap;
   }
+  .footer-text {
+    padding: 0 2vw;
+  }
 }
 
 @media screen and (max-width: 442px) {
@@ -149,4 +152,5 @@ footer {
     text-align: center;
     font-size: 1.5em;
   }
+
 }
