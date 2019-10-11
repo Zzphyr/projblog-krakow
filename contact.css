@@ -99,7 +99,7 @@ form>label {
 
 #mapid {
     height: 30vh;
-    border: 1px solid #784F41;
+    border: 1px solid var(--general--color);
     z-index: 0;
 }
 
