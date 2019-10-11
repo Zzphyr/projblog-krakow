@@ -3,6 +3,8 @@
 /* styling global variables */
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+
 * {
   --title--color: white;
   /* example use: background-color: var(--title--color);*/
@@ -22,7 +24,7 @@ body {
 
 /*  navbar */
 nav {
-  background: #784F41;
+  background: #aa261d;
   z-index: 99;
 }
 
@@ -31,7 +33,7 @@ nav {
   top: 0;
   width: 100%;
   overflow: hidden;
-  box-shadow: 3px 0 15px 7px rgb(94, 94, 94);
+  box-shadow: 0px 0 7px 5px #BB2010;
 }
 
 .navbar-home {
@@ -47,12 +49,14 @@ nav {
 .nav-link,
 .nav-link:visited {
   text-decoration: none;
-  color: #BBE5ED;
-  padding: 1em 0;
+  color: #FFFFFF;
+  padding: 0.5em 0;
+  font-size: 34px;
+  font-family: 'Courgette', cursive;
 }
 
 .nav-link:hover {
-  color: rgb(130, 192, 204);
+  color: rgb(200, 250, 250);
 }
 
 .nav-btn-home {
@@ -90,8 +94,8 @@ nav {
 footer {
   margin-top: 130px;
   padding: 40px 0 10px 0;
-  background: #784F41;
-  color: #BBE5ED;
+  background: #aa261d;
+  color: #FFFFFF;
 }
 
 
@@ -106,7 +110,7 @@ footer {
 .media-footer a {
   text-decoration: none;
   padding: 0 2em;
-  color: #BBE5ED;
+  color: #FFFFFF;
 }
 
 .media-footer a:hover {
@@ -121,12 +125,12 @@ footer {
 }
 
 .footer-text .wild-link {
-  color: rgb(130, 192, 204);
+  color: rgb(200, 250, 250);
   text-decoration: none;
 }
 
 .footer-text .wild-link:hover {
-  color: #F99797;
+  text-decoration: underline;
 }
 
 

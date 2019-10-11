@@ -23,9 +23,10 @@ main {
     margin: 0 0 70px 0;
     text-align: center;
     padding: 10px 20px;
-    background: #784F41;
+    background: #aa261d;
     color: var(--title--color);
     font-size: 44px;
+    font-family: 'Courgette', cursive;
 }
 
 form {
@@ -46,13 +47,13 @@ form>label {
     background: whitesmoke;
     color: black;
     transition: 120ms ease-out;
-    border: 1px solid #784F41;
+    border: 1px solid #aa261d;
 }
 
 .ct-btn button:hover {
     background: #BBE5ED;
     color: black;
-    border: 1px solid #784F41;
+    border: 1px solid #aa261d;
 }
 
 .container {
@@ -61,6 +62,7 @@ form>label {
 
 .ct-subtitle {
     padding: 35px 0 25px 0;
+    font-family: 'Courgette', cursive;
 }
 
 .people {
@@ -101,7 +103,7 @@ form>label {
 
 #mapid {
     height: 30vh;
-    border: 1px solid #784F41;
+    border: 1px solid #aa261d;
     z-index: 0;
 }
 

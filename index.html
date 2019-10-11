@@ -50,7 +50,7 @@
       <h2 class="day-1">Day 1</h2>
       <div class="grid-container">
         <a class="grid-container-main-img link-image" href="trips.html#day1"
-          style="background-image: url(photos/CH_2.jpg)">
+          style="background-image: url(photos/CH_2.jpg)" id="myImg">
           <!-- <p class="home-p"><a href="trips.html">Lorem Ipsum </a></p> -->
         <span class="span-cool">Cloth Hall</span>
         </a>
@@ -122,13 +122,35 @@
       <li><a href="https://www.youtube.com">Youtube</a></li>
     </ul>
     <div class="footer-text">
-      <p>A project by <a href="./contact.html" class="wild-link">wilders</a> for the wild minded - <a
+      <p>A project by <a href="./contact.html" class="wild-link">Wilders</a> for the wild minded - <a
           href="https://www.wildcodeschool.com/en-GB/campuses/lisbon" class="wild-link">Wild Code School</a> 2019 </p>
     </div>
   </footer>
 
 
   <!-- Optional JavaScript -->
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+    </script>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
