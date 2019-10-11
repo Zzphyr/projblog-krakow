@@ -2,6 +2,7 @@
 
 /* styling global variables */
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 * {
   --title--color: white;
   /* example use: background-color: var(--title--color);*/
@@ -12,8 +13,14 @@
 }
 
 
-/*  navbar */
+/* font */
 
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	}
+
+/*  navbar */
 nav {
   background: #784F41;
   z-index: 99;
