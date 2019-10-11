@@ -114,39 +114,6 @@ h2 {
     background-size: cover;
 }
 
-@media screen and (max-width: 770px) {
-    .grid-container {
-        display: block;
-        height: auto;
-        max-width: 600px;
-        margin: auto;
-    }
-
-    .grid-container-main-img,
-    .grid-container-bottom-img {
-        height: 50vh;
-    }
-
-    .span-cool-main {
-        font-size: 19px;
-        font-weight: 500;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    h1 {
-        font-size: 57px;
-        line-height: unset;
-        padding: 0 5px;
-    }
-
-    .banner-text2 {
-        font-size: 25px;
-        line-height: 10px;
-    }
-}
-
-
 /*  for the logo */
 
 .logo1,
@@ -173,3 +140,41 @@ h2 {
     text-decoration: none;
     color: rgba(187, 229, 237, 0.6);
 }
+
+@media screen and (max-width: 770px) {
+    .grid-container {
+        display: block;
+        height: auto;
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .grid-container-main-img,
+    .grid-container-bottom-img {
+        height: 50vh;
+    }
+
+    .span-cool-main {
+        font-size: 19px;
+        font-weight: 500;
+    }
+    .logo1, .logo2 {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    h1 {
+        font-size: 57px;
+        line-height: unset;
+        padding: 0 5px;
+    }
+
+    .banner-text2 {
+        font-size: 25px;
+        line-height: 10px;
+    }
+}
+
+
