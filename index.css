@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
 
 header {
     display: flex;
@@ -17,7 +17,7 @@ h1 {
     text-align: center;
     color: var(--title--color);
     line-height: 0.8;
-   /*  text-shadow: 1px 1px rgba(0, 0, 0, 0.404); */
+    /*  text-shadow: 1px 1px rgba(0, 0, 0, 0.404); */
     text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4), 1px -1px 0 rgba(0, 0, 0, 0.4), -1px 1px 0 rgba(0, 0, 0, 0.4), 1px 1px 0 rgba(0, 0, 0, 0.4);
     font-family: var(--title-font);
 }
@@ -43,10 +43,10 @@ h2 {
     height: 100vh;
     display: grid;
     grid-template-columns: repeat (3, 3fr);
-    grid-template-columns: repeat( auto-fit, minmax(33.33%, 1fr) );
+    grid-template-columns: repeat(auto-fit, minmax(33.33%, 1fr));
     margin: auto;
     max-width: 910px;
- }
+}
 
 .grid-container-main-img {
     grid-column: 1 / 4;
@@ -58,7 +58,7 @@ h2 {
     align-items: flex-end;
     padding: 30px;
     margin: 5px;
- }
+}
 
 .grid-container-bottom-img {
     display: flex;
@@ -67,7 +67,7 @@ h2 {
     padding: 10px;
     margin: 5px;
     background-blend-mode: lighten;
- }
+}
 
 .home-p {
     font-size: 30px;
@@ -88,7 +88,7 @@ h2 {
 }
 
 .span-cool {
-    opacity:0;
+    opacity: 0;
     color: var(--title--color);
     text-align: center;
     font-size: 19px;
@@ -125,7 +125,8 @@ h2 {
     .grid-container-main-img,
     .grid-container-bottom-img {
         height: 50vh;
-    }   
+    }
+
     .span-cool-main {
         font-size: 19px;
         font-weight: 500;
@@ -138,9 +139,37 @@ h2 {
         line-height: unset;
         padding: 0 5px;
     }
+
     .banner-text2 {
         font-size: 25px;
         line-height: 10px;
     }
 }
 
+
+/*  for the logo */
+
+.logo1,
+.logo2 {
+    font-family: 'Courgette', cursive;
+    position: fixed;
+    top: 5px;
+    left: 28px;
+    text-decoration: none;
+    color: rgba(187, 229, 237, 0.6);
+    z-index: 100;
+    font-size: 20px;
+}
+
+.logo2 {
+    font-family: 'Courgette', cursive;
+    top: 32px;
+    left: 69px;
+    line-height: 0.5em;
+}
+
+.logo1:hover,
+.logo2:hover {
+    text-decoration: none;
+    color: rgba(187, 229, 237, 0.6);
+}

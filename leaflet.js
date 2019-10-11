@@ -8,6 +8,6 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 }).addTo(mymap);
 
 var marker = L.marker([38.724833, -9.145972]).addTo(mymap);
-marker.bindPopup("We are here!").openPopup();
+marker.bindPopup("We are here!");
 
 // mapbox access token: pk.eyJ1IjoibWFudWNhcmQiLCJhIjoiY2sxajZoZ3IyMGw4eTNjcGdjbGQyMzc2bCJ9.ka70U2ToJqgGCNsGqppuGg
